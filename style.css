@@ -42,9 +42,10 @@ a:hover {
  color:#1BB4E8; ;
 }
 .menu {
-  margin-right: 20px;
+  margin-right: 50px;
   margin-top: -15px;
   color: #FFFFFF;
+  font-size: 18px;
 }
 ul li, span {
   margin-bottom: 20px;
@@ -88,32 +89,46 @@ ul li, span {
   grid-template-columns: 1fr 1fr ;
 }
 
+/* faixa azul com nome destino */
 .logoDestino {
   background-color:#1BB4E8;
   height: 50px;
 }
+.logoDestino img {
+  margin-left: 5px;
+}
 
+.logoDestino h2 {
+  text-align: justify;
+  margin-top: -40px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+/* faixa marrom com nome frota */
 .logoFrota {
   background-color: #C6B07F;
   height: 50px;
 }
 
-h2 {
-  text-align: justify;
-  width: 50%;
-  margin-top: -38px;
-  margin-left: 45px;
+.logoFrota img {
+  margin-left: 5px;
 }
 
+.logoFrota h2 {
+  text-align: justify;
+  margin-top: -35px;
+  margin-left: 50px;
+  font-size: 30px;
+}
 .texto-imagens {
   text-align: center;
   color: black;
 }
 
-.galeria {
+.texto-imagens .galeria {
   display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 5px;
-  row-gap: 5px;
-
+  margin-top: -15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
 }

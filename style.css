@@ -1,0 +1,108 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:20px ;
+  color: #EBEBEB;
+}
+#topo {
+  background-color: #21272B;
+}
+
+.container {
+  display: flex;
+  align-items:flex-start;
+}
+
+.container h1 {
+  font-size: 20px;
+  color:#1BB4E8;
+  font-weight:lighter;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.container p {
+  margin-top: 35px;
+  margin-left: 40px;
+  color: #ffffff;
+  font-style: italic;
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: end;
+  color: #FFFFFF;
+  margin: 0 0 0 0px;
+}
+.menu {
+  margin-right: 20px;
+}
+ul li, span {
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+}
+
+.marrom {
+  color:#C6B07F ;
+}
+.barcoprincipal {
+  margin-bottom: 30px;
+}
+.segundobarco {
+  display: flex;
+  align-items:flex-start;
+}
+.mensagem {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  background-color:#1A3243;
+}
+.mensagem h3{
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.mensagem p {
+  color:#1BB4E8;
+  font-weight:lighter;
+}
+
+.grid-container {
+  display: grid;
+  gap:50px 50px;
+  grid-template-columns: 1fr 1fr ;
+}
+
+.logoDestino {
+  background-color:#1BB4E8;
+  height: 50px;
+}
+
+.logoFrota {
+  background-color: #C6B07F;
+  height: 50px;
+}
+
+h2 {
+  text-align: justify;
+  width: 50%;
+  margin-top: -38px;
+  margin-left: 45px;
+}
+
+.texto-imagens {
+  text-align: center;
+  color: black;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+
+}

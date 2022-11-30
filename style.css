@@ -3,8 +3,10 @@ body{
   font-size:20px ;
   color: #EBEBEB;
 }
+/* primeira faixa azul do menu */
 #topo {
   background-color: #21272B;
+  height: 65px;
 }
 
 .container {
@@ -36,30 +38,37 @@ ul {
   color: #FFFFFF;
   margin: 0 0 0 0px;
 }
+a:hover {
+ color:#1BB4E8; ;
+}
 .menu {
   margin-right: 20px;
+  margin-top: -15px;
+  color: #FFFFFF;
 }
 ul li, span {
   margin-bottom: 20px;
   margin-left: 20px;
-
 }
 
-.marrom {
-  color:#C6B07F ;
-}
 .barcoprincipal {
   margin-bottom: 30px;
+  margin-top: 0px;
 }
+/* barco dentro da caixa azul */
 .segundobarco {
   display: flex;
   align-items:flex-start;
 }
+/* mensagem dentro da caixa com telefone */
 .mensagem {
   position: absolute;
   bottom: 0;
   right: 30px;
   background-color:#1A3243;
+}
+.marrom {
+  color:#C6B07F ;
 }
 .mensagem h3{
   font-style: italic;
@@ -69,6 +78,8 @@ ul li, span {
 .mensagem p {
   color:#1BB4E8;
   font-weight:lighter;
+  display: inline-block;
+  float: inline-end;
 }
 
 .grid-container {

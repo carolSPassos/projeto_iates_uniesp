@@ -41,8 +41,10 @@ ul {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: end;
-  color: #FFFFFF;
   margin: 0 0 0 0px;
+}
+a {
+  color: #FFFFFF;
 }
 
 a:hover {
@@ -94,9 +96,6 @@ span {
 
 .mensagem p {
   color: #1BB4E8;
-  font-weight: lighter;
-  display: inline-block;
-  float: none;
 }
 
 .grid-container {

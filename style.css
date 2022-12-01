@@ -1,7 +1,12 @@
-body{
+
+body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size:20px ;
+  font-size: 20px;
   color: #EBEBEB;
+}
+img {
+  max-width: 100%;
+  display: block;
 }
 /* primeira faixa azul do menu */
 #topo {
@@ -11,16 +16,17 @@ body{
 
 .container {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .container h1 {
   font-size: 20px;
-  color:#1BB4E8;
-  font-weight:lighter;
+  color: #1BB4E8;
+  font-weight: lighter;
   margin-bottom: 0px;
   margin-left: 0px;
 }
+
 .container p {
   margin-top: 35px;
   margin-left: 40px;
@@ -38,16 +44,21 @@ ul {
   color: #FFFFFF;
   margin: 0 0 0 0px;
 }
+
 a:hover {
- color:#1BB4E8; ;
+  color: #1BB4E8;
+  ;
 }
+
 .menu {
   margin-right: 50px;
   margin-top: -15px;
   color: #FFFFFF;
   font-size: 18px;
 }
-ul li, span {
+
+ul li,
+span {
   margin-bottom: 20px;
   margin-left: 20px;
 }
@@ -56,44 +67,50 @@ ul li, span {
   margin-bottom: 30px;
   margin-top: 0px;
 }
+
 /* barco dentro da caixa azul */
 .segundobarco {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
 }
+
 /* mensagem dentro da caixa com telefone */
 .mensagem {
   position: absolute;
   bottom: 0;
   right: 30px;
-  background-color:#1A3243;
+  background-color: #1A3243;
 }
+
 .marrom {
-  color:#C6B07F ;
+  color: #C6B07F;
 }
-.mensagem h3{
+
+.mensagem h3 {
   font-style: italic;
   font-weight: normal;
   text-align: center;
 }
+
 .mensagem p {
-  color:#1BB4E8;
-  font-weight:lighter;
+  color: #1BB4E8;
+  font-weight: lighter;
   display: inline-block;
-  float: inline-end;
+  float: none;
 }
 
 .grid-container {
   display: grid;
-  gap:50px 50px;
-  grid-template-columns: 1fr 1fr ;
+  gap: 50px 50px;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* faixa azul com nome destino */
 .logoDestino {
-  background-color:#1BB4E8;
+  background-color: #1BB4E8;
   height: 50px;
 }
+
 .logoDestino img {
   margin-left: 5px;
 }
@@ -121,14 +138,46 @@ ul li, span {
   margin-left: 50px;
   font-size: 30px;
 }
+
 .texto-imagens {
   text-align: center;
   color: black;
 }
 
-.texto-imagens .galeria {
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .mensagem {
+    position: relative;
+    width: 1fr;
+  }
+
+  .container {
+    position: relative;
+  }
+  .menu {
+    position: relative;
+    margin-right: 10px;
+    font-size: medium;
+    margin-top: 15px;
+  }
+  #topo {
+    height: auto;
+  }
+}
+
+.galeria {
   display: grid;
-  margin-top: -15px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+footer {
+  /* z-index: -1; */
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  background-color:aliceblue;
 }
